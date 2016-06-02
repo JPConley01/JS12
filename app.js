@@ -16,6 +16,11 @@ function goldFunc() {
 
     };
     gold.panPoints = [];
+
+  gold.pointPlace = function(){
+    gold.testX = 374;
+    gold.testY = 390;
+  };
 }
 
 
