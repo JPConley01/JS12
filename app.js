@@ -4,9 +4,19 @@ angular.module('goldRushApp');
 
 angular.module('goldRushApp').controller('goldCtrl', goldFunc);
 
-    function goldFunc() {
-      console.log("Made it through");
-    }
+function goldFunc() {
+    var gold = this;
+    gold.userEvent = function(john) {
+        gold.pageX = john.pageX;
+        gold.pageY = john.pageY;
+        //console.log(john.pageX, gold.pageY);
+        gold.panPoints.push([gold.pageX, gold.pageY]);
+
+        console.log(gold.panPoints);
+
+    };
+    gold.panPoints = [];
+}
 
 
 

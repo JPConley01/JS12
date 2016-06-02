@@ -13,14 +13,14 @@
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular.js"></script>
-        <script type="text/javascript" src="main.js"></script>
+        <script type="text/javascript" src="app.js"></script>
         <title>I don't care</title>
     </head>
 
     <body ng-controller="goldCtrl as gold">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12" id="bullseye" ng-click="getCoordinates(event)">
+                <div class="col-lg-12" id="bullseye" ng-click="gold.userEvent($event)">
                     <img class="img-responsive" src="topo-co.jpg" alt=""/>
                 </div>
             </div>
